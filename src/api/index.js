@@ -2,7 +2,7 @@ import axios from "axios";
 
 //  const API = axios.create({ baseURL: `http://localhost:3001/` });
 //const API = axios.create({ baseURL: `https://youtubeclone5031.herokuapp.com/` });
-const API  =  axios.create({baseURL: `https://clone-backend-1.onrender.com/`});
+const API  =  axios.create({baseURL: `https://youtubebackend-hjmh.onrender.com/`});
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("Profile")) {
@@ -13,7 +13,7 @@ API.interceptors.request.use((req) => {
   return req;
 });
 
-export const login = (authData) => API.post("/user/login/", authData);
+export const login = (authData) => API.post("/user/login", authData);
 export const updateChanelData = (id, updateData) =>
   API.patch(`/user/update/${id}`, updateData);
 export const fetchAllChanel = () => API.get("/user/getAllChanels");
