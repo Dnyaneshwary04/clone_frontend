@@ -29,7 +29,8 @@ function Navbar({ toggleDrawer,setEditCreateChanelBtn }) {
     function start() {
       gapi.client.init({
         clientId:
-          "190052140760-dp8mac282atgfvh4un9u0fv4repqctjt.apps.googleusercontent.com",
+          "190052140760-n7458d5hqjb7rrvm5g9u3e58jdtf9g5k.apps.googleusercontent.com",
+          
         scope: "email",
       });
     }
@@ -95,7 +96,8 @@ function Navbar({ toggleDrawer,setEditCreateChanelBtn }) {
           <>
             <GoogleLogin
               clientId={
-                "190052140760-dp8mac282atgfvh4un9u0fv4repqctjt.apps.googleusercontent.com"
+                "190052140760-n7458d5hqjb7rrvm5g9u3e58jdtf9g5k.apps.googleusercontent.com"
+
               }
               onSuccess={onSuccess}
               onFailure={onFailure}
